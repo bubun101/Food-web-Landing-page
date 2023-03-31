@@ -62,6 +62,7 @@ header {
 #menu-icon {
   font-size: 2rem;
   cursor: pointer;
+  display: none;
 }
 
 section {
@@ -231,25 +232,25 @@ section {
   margin-bottom: 30px;
 }
 
-.main{
+.main {
   display: flex;
   flex-wrap: wrap;
 }
-.footer{
+.footer {
   padding: 10px 0;
 }
 
-.col{
+.col {
   width: 25%;
 }
 
-.col h4{
+.col h4 {
   font-size: 1.2rem;
   color: var(--text-color);
   margin-bottom: 25px;
   position: relative;
 }
-.col h4::before{
+.col h4::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -257,34 +258,33 @@ section {
   left: 0;
   bottom: -8px;
   background: var(--main-color);
-
 }
 
-.col ul li :not(:last-child){
+.col ul li :not(:last-child) {
   margin-bottom: 15px;
 }
 
-.col ul li a{
+.col ul li a {
   color: #9897a9;
   font-size: 1.1rem;
   display: block;
   text-transform: capitalize;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.col ul li a:hover{
+.col ul li a:hover {
   color: var(--text-color);
   transform: translateX(-12px);
 }
 
-.col .social{
+.col .social {
   width: 220px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.col .social a{
+.col .social a {
   height: 40px;
   width: 40px;
   background: var(--main-color);
@@ -294,11 +294,10 @@ section {
   justify-content: center;
   font-size: 1.5rem;
   border-radius: 50%;
-  transition: .4s;
-
+  transition: 0.4s;
 }
 
-.col .social a:hover{
+.col .social a:hover {
   transform: scale(1.2);
   color: var(--bg-color);
   background-color: var(--text-color);
